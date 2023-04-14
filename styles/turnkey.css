@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    
+  }
+
+  
+/* FRONTPAGE CSS  */
+.turnkey {
+  background-image: url("/assets/bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  box-sizing: border-box;
+  color: #fff;
+  display: flex;
+  min-height: 90vh;
+  align-items: center ;
+  justify-content: center;
+}
+  .turnkey-box {
+    width: 60vh;
+    height: 60vh;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 1); /* updated value */
+    box-shadow: 0 0 10px #000;
+    border-radius: 1px;
+    margin-left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  h1 {
+          
+    margin: 0;
+    font-size: 36px;
+    font-weight: 500;
+    color: #45a049;
+    text-align: left;
+    letter-spacing: 4px;
+  }
+
+  p {
+    justify-content: center;
+    text-align: justify;
+    font-size: 16px;
+    margin-top: 20px;
+    line-height: 2;
+  }
+      @media screen and (max-width: 600px) {
+          .box {
+              width: 90%;
+              height: auto;
+              padding: 10px;
+          }
+  
+          h1 {
+              font-size: 24px;
+          }
+  
+          p {
+              font-size: 14px;
+          }
+      }
+
+
+
+/* GALLERY CSS  */
+
+
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 70vh;
+    justify-content: center;
+  }
+  
+  .box {
+    background-color:white;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow: hidden;
+    transition: .5s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+    justify-content: center;
+    border-radius: 2px;
+  }
+  
+  .box > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    transition: .1s;
+    
+  }
+  
+  .box > span {
+    font-size: 3.8vh;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+  }
+  
+  .box:hover { 
+    flex: 1 1 50%; 
+    }
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .box:hover > span {
+    display: none;
+  }
+   

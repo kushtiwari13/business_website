@@ -1,0 +1,158 @@
+* {
+    box-sizing:border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: 'Poppins',sans-serif;
+  }
+  
+  .content-container {
+    padding: 75px;
+    padding-right: 0px;
+    padding-left: 125px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+  }
+  
+  .col-container:after {
+    content: "";
+    display: table;
+    clear: both;
+
+  }
+  
+  .column-one {
+    float: left;
+    width: 66.66666%;
+    padding: 25px;
+    padding-right: 150px;
+  }
+  .column-two {
+    float: left;
+    width: 20%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    margin-right: 150px;  
+    
+    
+  }
+  
+  .l-font {
+    font-size: medium;
+    
+    text-align: justify;
+    line-height: 2.5;
+  }
+  
+  .xl-font {
+    font-size: 65px;
+    color: #26822e;
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 15px;
+  }
+  
+  .column-two img {
+    display: flex;
+    height: auto;
+    max-width: 100%;
+    text-align: right;
+    object-fit: cover;
+    object-position: center
+
+  }
+  
+  
+
+  @media screen and (max-width: 767px)
+   {
+    .content-container{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+    .column-one,
+    .column-two {
+      width: 100%;
+         
+      text-align: center;
+      justify-items: center;
+    }
+
+    .column-two img{
+    display: none;
+    }
+
+
+  }
+
+  @media screen and (max-width: 800px)
+  {
+   .content-container{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+   }
+   .column-one,
+   .column-two {
+     width: 100%;
+        
+     text-align: center;
+     justify-items: center;
+   }
+
+   .column-two img{
+   display: none;
+   }
+
+
+ }
+
+ @media screen and (max-width: 960px)
+  {
+   .content-container{
+     display: flex;
+     flex-direction: column;
+     flex-wrap: wrap;
+   }
+   .column-one,
+   .column-two {
+     width: 100%;
+        
+     text-align: center;
+     justify-items: center;
+   }
+
+   .column-two img{
+   display: none;
+   }
+
+
+ }
+ @media screen and (max-width: 1267px)
+ {
+  .content-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .column-one,
+  .column-two {
+    width: 100%;
+       
+    text-align: center;
+    justify-items: center;
+  }
+
+  .column-two img{
+  display: none;
+  }
+
+
+}
+
+
+
